@@ -5,6 +5,7 @@
 //  Created by rushan on 8/12/18.
 //  Copyright © 2018 rushan. All rights reserved.
 //
+//Configured with github repo
 
 import UIKit
 
