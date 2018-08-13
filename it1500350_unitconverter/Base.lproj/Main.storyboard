@@ -12,7 +12,7 @@
         <!--Weight-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <viewController title="Weight" id="9pv-A4-QxB" customClass="FirstViewController" customModule="it1500350_unitconverter" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Weight" id="9pv-A4-QxB" customClass="WeightsViewController" customModule="it1500350_unitconverter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -23,6 +23,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <action selector="gramConversion:" destination="9pv-A4-QxB" eventType="editingChanged" id="bvZ-Rv-YIq"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Kilogram" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bgT-Dh-7K5">
                                 <rect key="frame" x="16" y="173" width="68" height="21"/>
@@ -78,6 +81,12 @@
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
                     <navigationItem key="navigationItem" title="Weight" id="okp-9m-9O7"/>
+                    <connections>
+                        <outlet property="inputGram" destination="Qph-dc-P0E" id="qxV-q8-cEp"/>
+                        <outlet property="inputKg" destination="n80-xe-hXp" id="pIn-5d-s02"/>
+                        <outlet property="inputOunce" destination="flT-yx-u2a" id="tum-Wh-9c9"/>
+                        <outlet property="inputPound" destination="6u9-kJ-ep0" id="qYp-9s-HB3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
