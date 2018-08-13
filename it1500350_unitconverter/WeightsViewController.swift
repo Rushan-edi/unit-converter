@@ -38,10 +38,32 @@ class WeightsViewController: UIViewController {
             self.inputKg.text = String(wc.inputKilogram)
             
         }
-
-
+    }
+    
+    func clear(){
+        
+        self.inputGram.text = ""
+        self.inputOunce.text = ""
+        self.inputKg.text = ""
+        self.inputPound.text = ""
         
     }
+    
+    @IBAction func onClickGram(_ sender: Any) {
+        clear()
+    }
+    @IBAction func onClickKg(_ sender: Any) {
+        clear()
+    }
+    @IBAction func onClickPound(_ sender: Any) {
+        clear()
+    }
+    @IBAction func onClickOunce(_ sender: Any) {
+        clear()
+    }
+    
+    
+    
     
     /*
     // MARK: - Navigation
