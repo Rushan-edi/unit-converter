@@ -28,12 +28,18 @@ class WeightsViewController: UIViewController {
     
     @IBAction func gramConversion(_ sender: Any) {
         let inputGramDouble = Double(inputGram.text!)
-        let wc=WeightConversion()
-        wc.gramConversions(inputGramDouble!)
         
-        self.inputPound.text = String(wc.inputPound)
-        self.inputOunce.text = String(wc.inputOunce)
-        self.inputKg.text = String(wc.inputKilogram)
+        if inputGramDouble != nil {
+            
+            let wc = WeightConversion()
+            wc.gramConversions( inputGramDouble!)
+            self.inputPound.text = String(wc.inputPound)
+            self.inputOunce.text = String(wc.inputOunce)
+            self.inputKg.text = String(wc.inputKilogram)
+            
+        }
+
+
         
     }
     
