@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4208B31A2121A09B0061E01E /* WeightConversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4208B3192121A09B0061E01E /* WeightConversion.swift */; };
 		426400FE21209E0D00EA8B64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426400FD21209E0D00EA8B64 /* AppDelegate.swift */; };
 		4264010021209E0D00EA8B64 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426400FF21209E0D00EA8B64 /* FirstViewController.swift */; };
 		4264010221209E0D00EA8B64 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4264010121209E0D00EA8B64 /* SecondViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4208B3192121A09B0061E01E /* WeightConversion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightConversion.swift; sourceTree = "<group>"; };
 		426400FA21209E0D00EA8B64 /* it1500350_unitconverter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = it1500350_unitconverter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		426400FD21209E0D00EA8B64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		426400FF21209E0D00EA8B64 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -37,6 +39,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4208B31821219FA80061E01E /* conversion_controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4208B3192121A09B0061E01E /* WeightConversion.swift */,
+			);
+			path = conversion_controllers;
+			sourceTree = "<group>";
+		};
 		426400F121209E0C00EA8B64 = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +66,7 @@
 		426400FC21209E0D00EA8B64 /* it1500350_unitconverter */ = {
 			isa = PBXGroup;
 			children = (
+				4208B31821219FA80061E01E /* conversion_controllers */,
 				426400FD21209E0D00EA8B64 /* AppDelegate.swift */,
 				426400FF21209E0D00EA8B64 /* FirstViewController.swift */,
 				4264010121209E0D00EA8B64 /* SecondViewController.swift */,
@@ -142,6 +153,7 @@
 				4264010221209E0D00EA8B64 /* SecondViewController.swift in Sources */,
 				426400FE21209E0D00EA8B64 /* AppDelegate.swift in Sources */,
 				4264010021209E0D00EA8B64 /* FirstViewController.swift in Sources */,
+				4208B31A2121A09B0061E01E /* WeightConversion.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
