@@ -7,7 +7,7 @@
 //
 
 import Foundation
-class WeightConverter{
+class WeightConversion{
     
     var inputGram:Double = 0.0
     var inputKilogram:Double = 0.0
