@@ -15,6 +15,7 @@
 		4264010721209E0D00EA8B64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4264010621209E0D00EA8B64 /* Assets.xcassets */; };
 		4264010A21209E0D00EA8B64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4264010821209E0D00EA8B64 /* LaunchScreen.storyboard */; };
 		42808F532121F0B60084F767 /* WeightsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42808F522121F0B60084F767 /* WeightsViewController.swift */; };
+		42BA92292123420200828BEC /* TemperatureConversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BA92282123420200828BEC /* TemperatureConversion.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		4264010921209E0D00EA8B64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4264010B21209E0D00EA8B64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		42808F522121F0B60084F767 /* WeightsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightsViewController.swift; sourceTree = "<group>"; };
+		42BA92282123420200828BEC /* TemperatureConversion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureConversion.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +47,7 @@
 			isa = PBXGroup;
 			children = (
 				4208B3192121A09B0061E01E /* WeightConversion.swift */,
+				42BA92282123420200828BEC /* TemperatureConversion.swift */,
 			);
 			path = conversion_controllers;
 			sourceTree = "<group>";
@@ -153,6 +156,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42BA92292123420200828BEC /* TemperatureConversion.swift in Sources */,
 				42808F532121F0B60084F767 /* WeightsViewController.swift in Sources */,
 				4264010221209E0D00EA8B64 /* SecondViewController.swift in Sources */,
 				426400FE21209E0D00EA8B64 /* AppDelegate.swift in Sources */,
