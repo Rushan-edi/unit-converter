@@ -40,7 +40,7 @@ class TemperatureViewController: UIViewController {
     @IBAction func onClickKelvin(_ sender: Any) {
         clear()
     }
-    
+ // calling to celsiusConversion function in TemperatureConversion controller @param inputCelsius
     @IBAction func celsiusConversion(_ sender: Any) {
         
         let inputCelsiusDouble = Double(inputCelsius.text!)

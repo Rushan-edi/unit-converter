@@ -25,7 +25,7 @@ class WeightsViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+    // calling to gramconversion function in weightconversion controller @param inputGram
     @IBAction func gramConversion(_ sender: Any) {
         let inputGramDouble = Double(inputGram.text!)
         
