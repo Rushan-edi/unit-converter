@@ -39,6 +39,50 @@ class WeightsViewController: UIViewController {
             
         }
     }
+    @IBAction func kgConversion(_ sender: Any) {
+        
+        let inputKgDouble = Double(inputKg.text!)
+        
+        if inputKgDouble != nil {
+            
+            let wc = WeightConversion()
+            wc.kiloGramConversions(inputKgDouble!)
+            self.inputPound.text = String(wc.inputPound)
+            self.inputOunce.text = String(wc.inputOunce)
+            self.inputGram.text = String(wc.inputGram)
+            
+        }
+    }
+    @IBAction func poundConversion(_ sender: Any) {
+        
+        let inputPoundDouble = Double(inputPound.text!)
+        
+        if inputPoundDouble != nil {
+            
+            let wc = WeightConversion()
+            wc.poundConversions(inputPoundDouble!)
+            self.inputKg.text = String(wc.inputKilogram)
+            self.inputOunce.text = String(wc.inputOunce)
+            self.inputGram.text = String(wc.inputGram)
+            
+        }
+    }
+
+    @IBAction func ounceConversion(_ sender: Any) {
+        
+        let inputOunceDouble = Double(inputOunce.text!)
+        
+        if inputOunceDouble != nil {
+            
+            let wc = WeightConversion()
+            wc.ounceConversions(inputOunceDouble!)
+            self.inputKg.text = String(wc.inputKilogram)
+            self.inputPound.text = String(wc.inputPound)
+            self.inputGram.text = String(wc.inputGram)
+            
+        }
+    }
+    
     
     func clear(){
         
