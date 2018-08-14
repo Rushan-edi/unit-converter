@@ -259,7 +259,7 @@
         <!--Distance-->
         <scene sceneID="zwe-ob-fbj">
             <objects>
-                <viewController title="Distance" id="bmJ-ir-IaD" sceneMemberID="viewController">
+                <viewController title="Distance" id="bmJ-ir-IaD" customClass="DistanceViewController" customModule="it1500350_unitconverter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rVn-xD-av3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -277,6 +277,10 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <action selector="metreConversion:" destination="bmJ-ir-IaD" eventType="editingChanged" id="mfY-W4-3CA"/>
+                                    <action selector="onClickMetre:" destination="bmJ-ir-IaD" eventType="editingDidBegin" id="4e0-fd-64q"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Foot" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tmR-M1-IGU">
                                 <rect key="frame" x="16" y="177" width="84" height="21"/>
@@ -291,6 +295,10 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <action selector="footConversion:" destination="bmJ-ir-IaD" eventType="editingChanged" id="GKB-Bf-5El"/>
+                                    <action selector="onClickFoot:" destination="bmJ-ir-IaD" eventType="editingDidBegin" id="zfo-uf-ZoP"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xSi-Yb-SCB">
                                 <rect key="frame" x="117" y="233" width="242" height="30"/>
@@ -298,6 +306,10 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <action selector="onClickYard:" destination="bmJ-ir-IaD" eventType="editingDidBegin" id="VWb-y7-0lA"/>
+                                    <action selector="yardConversion:" destination="bmJ-ir-IaD" eventType="editingChanged" id="jCb-Zh-aVE"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Kilometre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zmq-ft-EBx">
                                 <rect key="frame" x="16" y="294" width="84" height="21"/>
@@ -312,6 +324,10 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <action selector="kmConversion:" destination="bmJ-ir-IaD" eventType="editingChanged" id="CP3-Q5-LIK"/>
+                                    <action selector="onClickKm:" destination="bmJ-ir-IaD" eventType="editingDidBegin" id="byZ-LR-Lhr"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cfh-pa-RGe">
                                 <rect key="frame" x="16" y="352" width="84" height="21"/>
@@ -326,6 +342,10 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <action selector="mileConversion:" destination="bmJ-ir-IaD" eventType="editingChanged" id="o1S-MO-K6P"/>
+                                    <action selector="onClickMile:" destination="bmJ-ir-IaD" eventType="editingDidBegin" id="RLe-2o-18s"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Yard" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Nh-FH-wAW">
                                 <rect key="frame" x="16" y="236" width="84" height="21"/>
@@ -339,6 +359,13 @@
                         <viewLayoutGuide key="safeArea" id="x5O-Tk-f4t"/>
                     </view>
                     <navigationItem key="navigationItem" title="Distance" id="Dhy-hz-5Vb"/>
+                    <connections>
+                        <outlet property="inputFoot" destination="CUs-gq-kzZ" id="C5a-CF-fgf"/>
+                        <outlet property="inputKm" destination="HN8-uk-uY9" id="fHu-lx-9Tu"/>
+                        <outlet property="inputMetre" destination="wrk-zf-P4u" id="7cE-lJ-nas"/>
+                        <outlet property="inputMile" destination="XvQ-xT-U4y" id="EnG-Gk-L3A"/>
+                        <outlet property="inputYard" destination="xSi-Yb-SCB" id="3a9-kl-5bU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jk5-b6-7Kp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
