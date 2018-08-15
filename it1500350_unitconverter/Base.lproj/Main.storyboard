@@ -185,7 +185,7 @@
         <!--Speed-->
         <scene sceneID="O2i-jA-lTN">
             <objects>
-                <viewController title="Speed" id="n9f-68-3Wh" sceneMemberID="viewController">
+                <viewController title="Speed" id="n9f-68-3Wh" customClass="SpeedViewController" customModule="it1500350_unitconverter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cVE-Ci-dcQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -203,6 +203,10 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <action selector="metrePerSecConversion:" destination="n9f-68-3Wh" eventType="editingChanged" id="h6Z-aS-my1"/>
+                                    <action selector="onClickMetrePerSec:" destination="n9f-68-3Wh" eventType="editingDidBegin" id="mz6-b9-q92"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Feet per minute" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I0z-m9-Lwi">
                                 <rect key="frame" x="16" y="194" width="147" height="21"/>
@@ -217,6 +221,10 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <action selector="feetPerMinConversion:" destination="n9f-68-3Wh" eventType="editingChanged" id="JJt-0d-8jK"/>
+                                    <action selector="onClickFeetPerMin:" destination="n9f-68-3Wh" eventType="editingDidBegin" id="0Vm-lR-hRg"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Kilometre per hour" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qWT-Os-qiP">
                                 <rect key="frame" x="16" y="252" width="147" height="21"/>
@@ -231,6 +239,10 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <action selector="kmPerHrConversion:" destination="n9f-68-3Wh" eventType="editingChanged" id="gsv-dz-jqn"/>
+                                    <action selector="onClickKmPerHr:" destination="n9f-68-3Wh" eventType="editingDidBegin" id="ygD-ve-g0a"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Miles per hour" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yo9-zG-baf">
                                 <rect key="frame" x="16" y="310" width="147" height="21"/>
@@ -245,12 +257,22 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <action selector="milesPerHrConversion:" destination="n9f-68-3Wh" eventType="editingChanged" id="iZN-rk-Flc"/>
+                                    <action selector="onClickMilesPerHr:" destination="n9f-68-3Wh" eventType="editingDidBegin" id="ZZZ-Xq-LrV"/>
+                                </connections>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="eNV-EO-Nq8"/>
                     </view>
                     <navigationItem key="navigationItem" title="Speed" id="3nb-tY-9ZN"/>
+                    <connections>
+                        <outlet property="inputFeetPerMin" destination="IcB-VV-nV9" id="Xhx-jw-P4v"/>
+                        <outlet property="inputKmPerHr" destination="GKv-Hr-zFJ" id="90m-f4-BsJ"/>
+                        <outlet property="inputMetrePerSec" destination="Apu-Pz-1J8" id="0s9-qG-XIN"/>
+                        <outlet property="inputMilesPerHr" destination="xXU-4Y-Srp" id="oxv-NC-coq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xrd-8h-9Sy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

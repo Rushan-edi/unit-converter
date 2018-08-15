@@ -19,6 +19,8 @@
 		42BA922B212345BB00828BEC /* TemperatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BA922A212345BB00828BEC /* TemperatureViewController.swift */; };
 		42BA922D2123572B00828BEC /* DistanceConversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BA922C2123572B00828BEC /* DistanceConversion.swift */; };
 		42BA922F21235DCB00828BEC /* DistanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BA922E21235DCB00828BEC /* DistanceViewController.swift */; };
+		42FE6FEB2123F2A70039F56F /* SpeedConversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FE6FEA2123F2A70039F56F /* SpeedConversion.swift */; };
+		42FE6FED2123F84F0039F56F /* SpeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FE6FEC2123F84F0039F56F /* SpeedViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		42BA922A212345BB00828BEC /* TemperatureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureViewController.swift; sourceTree = "<group>"; };
 		42BA922C2123572B00828BEC /* DistanceConversion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceConversion.swift; sourceTree = "<group>"; };
 		42BA922E21235DCB00828BEC /* DistanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceViewController.swift; sourceTree = "<group>"; };
+		42FE6FEA2123F2A70039F56F /* SpeedConversion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedConversion.swift; sourceTree = "<group>"; };
+		42FE6FEC2123F84F0039F56F /* SpeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +59,7 @@
 				4208B3192121A09B0061E01E /* WeightConversion.swift */,
 				42BA92282123420200828BEC /* TemperatureConversion.swift */,
 				42BA922C2123572B00828BEC /* DistanceConversion.swift */,
+				42FE6FEA2123F2A70039F56F /* SpeedConversion.swift */,
 			);
 			path = conversion_controllers;
 			sourceTree = "<group>";
@@ -89,6 +94,7 @@
 				42808F522121F0B60084F767 /* WeightsViewController.swift */,
 				42BA922A212345BB00828BEC /* TemperatureViewController.swift */,
 				42BA922E21235DCB00828BEC /* DistanceViewController.swift */,
+				42FE6FEC2123F84F0039F56F /* SpeedViewController.swift */,
 			);
 			path = it1500350_unitconverter;
 			sourceTree = "<group>";
@@ -170,9 +176,11 @@
 				4264010221209E0D00EA8B64 /* SecondViewController.swift in Sources */,
 				426400FE21209E0D00EA8B64 /* AppDelegate.swift in Sources */,
 				42BA922D2123572B00828BEC /* DistanceConversion.swift in Sources */,
+				42FE6FEB2123F2A70039F56F /* SpeedConversion.swift in Sources */,
 				4264010021209E0D00EA8B64 /* FirstViewController.swift in Sources */,
 				42BA922B212345BB00828BEC /* TemperatureViewController.swift in Sources */,
 				4208B31A2121A09B0061E01E /* WeightConversion.swift in Sources */,
+				42FE6FED2123F84F0039F56F /* SpeedViewController.swift in Sources */,
 				42BA922F21235DCB00828BEC /* DistanceViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
