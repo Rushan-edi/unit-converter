@@ -17,13 +17,7 @@ class WeightsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        self.hideKeyboardWhenTappedAround()
     }
     // calling to gramconversion function in weightconversion controller @param inputGram
     @IBAction func gramConversion(_ sender: Any) {
@@ -106,17 +100,16 @@ class WeightsViewController: UIViewController {
         clear()
     }
     
-    
-    
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+}
+extension UIViewController {
+    //this function will hidekeyboard when tapped anyware in ui
+    func hideKeyboardWhenTappedAround() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
     }
-    */
-
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
 }
